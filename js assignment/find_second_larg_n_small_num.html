@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Second smallest and second largest</h2>
+    <script>
+        var inputArray = [];// var size = 5; //Maximum Array size 
+        var size=prompt('enter the size');
+        for(var i=0; i<size; i++) 
+        { inputArray[i] = prompt('Enter Element ' + (i+1)); }
+document.writeln('your given array is: '+inputArray+'<br>');
+     
+        inputArray.sort(function(a,b){
+            return a-b;
+        });
+        
+        document.writeln(inputArray[1]+'<br>');
+      document.writeln(inputArray[size-2]+'<br>');
+      
+    
+
+    </script>
+</body>
+
+</html>

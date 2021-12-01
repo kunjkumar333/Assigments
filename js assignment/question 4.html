@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current time</title>
+
+    <script>
+        const h1 = document.querySelector('h1')
+
+        updateTime = () => {
+            const cur_time = new Date();
+
+            const hour = cur_time.getHours()
+            const min = cur_time.getMinutes()
+            const sec = cur_time.getSeconds()
+
+            const time = `${hour}:${min}:${sec}`
+           document.write(time+'<br>');
+          
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
